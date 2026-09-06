@@ -14,8 +14,8 @@ export default function Home() {
         <Hero />
         <LmsSection />
         <TrainingServicesSection />
-        <TransformationHubSection />
         <ManagementDevelopmentSection />
+        <TransformationHubSection />
       </main>
       <Footer />
     </div>

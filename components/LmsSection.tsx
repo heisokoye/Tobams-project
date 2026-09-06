@@ -12,16 +12,30 @@ export default function LmsSection() {
   ];
 
   return (
-    <section className="w-full bg-[#F3ECF2] py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-12">
-      <div className="max-w-[1280px] mx-auto">
-        {/* Main Grid Container */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
-          {/* Circular Team Photo (Left on Desktop, Top on Mobile) */}
-          <div className="lg:col-span-5 flex justify-center items-center">
-            <div className="relative w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] md:w-[400px] md:h-[400px] lg:w-[430px] lg:h-[430px] rounded-full overflow-hidden shadow-md border-4 border-white/60 shrink-0">
+    <section className="w-full bg-brand-lavender py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-12">
+      <div className="max-w-8xl mx-auto">
+        {/*
+          Grid order (source order = mobile stacking order):
+            1. Heading
+            2. Photo
+            3. Card + Button
+          On desktop, "order" is flipped so the photo auto-places first
+          (reserving col 1-5 across both rows via row-span-2), letting the
+          heading and the card+button wrapper auto-flow into col 6-12,
+          row 1 and row 2 respectively — no manual col/row-start needed.
+        */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-x-12 lg:gap-y-6 items-center lg:items-start">
+
+          {/* Section Heading */}
+          <h2 className="order-1 lg:order-2 lg:col-span-7 text-2xl sm:text-3xl md:text-[30px] text-brand-purple font-semibold tracking-widest leading-tight text-center lg:text-left">
+            Learning Management System
+          </h2>
+
+          {/* Circular Team Photo */}
+          <div className="order-2 lg:order-1 lg:col-span-5 lg:row-span-2 flex justify-center items-center">
+            <div className="relative w-70 h-[280px] sm:w-[360px] sm:h-[360px] md:w-[400px] md:h-[400px] lg:w-[430px] lg:h-[430px] rounded-full overflow-hidden shadow-md border-4 border-white/60 shrink-0">
               <Image
-                src="/lms-team.jpg"
+                src="/2.jpg"
                 alt="TG Academy instructors - professional team members"
                 fill
                 sizes="(max-width: 768px) 280px, (max-width: 1024px) 400px, 430px"
@@ -30,13 +44,8 @@ export default function LmsSection() {
             </div>
           </div>
 
-          {/* Right Column: Heading, Info Card, and Button */}
-          <div className="lg:col-span-7 flex flex-col items-start space-y-6">
-            
-            {/* Section Heading */}
-            <h2 className="text-2xl sm:text-3xl md:text-[36px] font-bold text-[#5B1947] tracking-tight leading-tight">
-              Learning Management System
-            </h2>
+          {/* Info Card + CTA Button */}
+          <div className="order-3 lg:col-span-7 flex flex-col items-start space-y-6 w-full">
 
             {/* Info Card Container */}
             <div className="w-full bg-[#E5D7E3] rounded-2xl md:rounded-3xl p-6 sm:p-8 text-[#2C272B] shadow-xs">

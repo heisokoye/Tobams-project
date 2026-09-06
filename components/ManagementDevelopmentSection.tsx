@@ -22,11 +22,11 @@ export default function ManagementDevelopmentSection() {
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-12">
-      <div className="max-w-[1280px] mx-auto bg-[#250A1B] text-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-md border border-[#3D142E]">
-        
+      <div className="max-w-8xl mx-auto bg-[#250A1B] text-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-md border border-[#3D142E]">
+
         {/* Main Layout Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
+
           {/* Mobile Order Heading (visible at top on mobile) */}
           <div className="lg:hidden">
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-tight mb-4">
@@ -36,9 +36,10 @@ export default function ManagementDevelopmentSection() {
 
           {/* Left Column: Image */}
           <div className="lg:col-span-6">
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md border border-white/10">
+            {/* Mobile: wide/landscape crop. Desktop: near-square crop matching the reference */}
+            <div className="relative w-full aspect-video lg:aspect-square rounded-2xl overflow-hidden shadow-md border border-white/10">
               <Image
-                src="/management-development.jpg"
+                src="/6.jpg"
                 alt="Corporate executives collaborating over a digital tablet in a modern office"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -49,14 +50,14 @@ export default function ManagementDevelopmentSection() {
 
           {/* Right Column: Heading (desktop), Paragraphs & Feature Pills */}
           <div className="lg:col-span-6 flex flex-col space-y-6">
-            
+
             {/* Desktop Heading */}
-            <h2 className="hidden lg:block text-3xl md:text-[36px] font-bold text-white tracking-tight leading-tight">
+            <h2 className="hidden lg:block text-3xl md:text-[36px] font-nromal text-white tracking-tight leading-tight">
               Management Development Program
             </h2>
 
             {/* Paragraphs */}
-            <div className="space-y-4 text-sm sm:text-base text-gray-200 font-normal leading-relaxed">
+            <div className="space-y-4 text-sm sm:text-sm text-gray-200 font-normal leading-relaxed">
               <p>
                 Tobams Group offers a comprehensive Management Development Program designed to equip corporate organisations with the high -performing leaders they need to thrive.
               </p>
@@ -70,7 +71,7 @@ export default function ManagementDevelopmentSection() {
               {pills.map((pill, index) => (
                 <div
                   key={index}
-                  className="bg-[#845778]/80 hover:bg-[#845778] backdrop-blur-xs rounded-xl px-5 py-3.5 flex items-center gap-3 text-xs sm:text-sm font-medium text-white shadow-xs border border-white/15 transition-all"
+                  className="bg-[#845778]/80 hover:bg-[#845778] backdrop-blur-xs rounded-xl px-5 py-3.5 flex items-center gap-3 text-xs sm:text-sm font-normal  text-white shadow-xs border border-white/15 transition-all"
                 >
                   <WhiteLightningIcon />
                   <span>{pill}</span>

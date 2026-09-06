@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <header className="w-full bg-white border-b border-gray-100 sticky top-0 z-50 shadow-xs">
       {/* Top Header Row */}
-      <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-12 py-3 sm:py-4 flex items-center justify-between">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-12 py-3 sm:py-4 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#5B1947] rounded-md p-1">
           <Image
@@ -24,19 +24,19 @@ export default function Navbar() {
         </Link>
 
         {/* Action Buttons (Desktop) */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-4">
           {/* Account Dropdown Button */}
           <button
             type="button"
-            className="flex items-center gap-2 bg-[#F6EEF5] hover:bg-[#EFE2ED] text-[#5B1947] border border-[#5B1947]/20 font-medium px-4 py-2 rounded-md text-sm transition-all focus:outline-none focus:ring-2 focus:ring-[#5B1947]"
+            className="flex items-center gap-2.5 bg-[#5B1947] hover:bg-[#471237] text-white font-medium px-4 py-2.5 rounded-md text-sm transition-all shadow-xs focus:outline-none focus:ring-2 focus:ring-[#5B1947]"
           >
-            <span className="w-6 h-6 rounded-full bg-[#5B1947] text-white flex items-center justify-center text-xs font-semibold">
+            <span className="w-6 h-6 rounded-full bg-white/20 text-white flex items-center justify-center text-xs font-semibold">
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
               </svg>
             </span>
             <span>Account</span>
-            <svg className="w-4 h-4 ml-0.5 text-[#5B1947]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 ml-0.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
@@ -71,22 +71,22 @@ export default function Navbar() {
       </div>
 
       {/* Secondary Navigation Bar (Desktop) */}
-      <div className="hidden md:block bg-white border-t border-gray-100/80">
-        <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-12">
-          <nav aria-label="Main Navigation" className="flex items-center gap-6 lg:gap-8 overflow-x-auto text-sm font-medium py-2.5">
+      <div className="hidden md:block bg-white border-t border-pink-100/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <nav aria-label="Main Navigation" className="flex items-center justify-center gap-6 lg:gap-8 overflow-x-auto text-sm font-medium py-3">
             <Link
               href="#about"
-              className="text-[#5B1947] font-semibold border-b-2 border-[#5B1947] pb-1 flex items-center gap-1 shrink-0"
+              className="text-brand-purple font-bold border-b-2 border-brand-purple pb-1 flex items-center gap-1 shrink-0"
             >
               <span>About</span>
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5 text-brand-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
               </svg>
             </Link>
 
             <Link
               href="#what-we-do"
-              className="text-gray-700 hover:text-[#5B1947] pb-1 flex items-center gap-1 transition-colors shrink-0"
+              className="text-gray-700 hover:text-brnad-purple pb-1 flex items-center gap-1 transition-colors shrink-0"
             >
               <span>What We Do</span>
               <svg className="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,7 +96,7 @@ export default function Navbar() {
 
             <Link
               href="#jobs"
-              className="text-gray-700 hover:text-[#5B1947] pb-1 flex items-center gap-1 transition-colors shrink-0"
+              className="text-gray-700 hover:text-brand-purple pb-1 flex items-center gap-1 transition-colors shrink-0"
             >
               <span>Jobs</span>
               <svg className="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -104,23 +104,23 @@ export default function Navbar() {
               </svg>
             </Link>
 
-            <Link href="#projects" className="text-gray-700 hover:text-[#5B1947] pb-1 transition-colors shrink-0">
+            <Link href="#projects" className="text-gray-700 hover:text-brand-purple pb-1 transition-colors shrink-0">
               Projects
             </Link>
 
-            <Link href="#tg-academy" className="text-gray-700 hover:text-[#5B1947] pb-1 transition-colors shrink-0">
+            <Link href="#tg-academy" className="text-gray-700 hover:text-brand-purple pb-1 transition-colors shrink-0">
               TG Academy
             </Link>
 
-            <Link href="#partnerships" className="text-gray-700 hover:text-[#5B1947] pb-1 transition-colors shrink-0">
+            <Link href="#partnerships" className="text-gray-700 hover:text-brand-purple] pb-1 transition-colors shrink-0">
               Strategic Partnership
             </Link>
 
-            <Link href="#pricing" className="text-gray-700 hover:text-[#5B1947] pb-1 transition-colors shrink-0">
+            <Link href="#pricing" className="text-gray-700 hover:text-brand-purple pb-1 transition-colors shrink-0">
               Pricing
             </Link>
 
-            <Link href="#consultation" className="text-gray-700 hover:text-[#5B1947] pb-1 transition-colors shrink-0">
+            <Link href="#consultation" className="text-gray-700 hover:text-brand-purple pb-1 transition-colors shrink-0">
               Book a Consultation
             </Link>
           </nav>
@@ -181,9 +181,9 @@ export default function Navbar() {
           <div className="pt-2 flex flex-col gap-3">
             <button
               type="button"
-              className="w-full flex items-center justify-center gap-2 bg-[#F6EEF5] text-[#5B1947] border border-[#5B1947]/30 font-medium py-2.5 rounded-md text-sm"
+              className="w-full flex items-center justify-center gap-2 bg-[#5B1947] text-white font-medium py-2.5 rounded-md text-sm"
             >
-              <span className="w-5 h-5 rounded-full bg-[#5B1947] text-white flex items-center justify-center text-xs">
+              <span className="w-5 h-5 rounded-full bg-white/20 text-white flex items-center justify-center text-xs">
                 👤
               </span>
               <span>Account</span>
