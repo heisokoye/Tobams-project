@@ -1,26 +1,20 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-plus-jakarta), system-ui, sans-serif;
+  --color-brand-purple: #5B1947;
+  --color-brand-purple-dark: #451036;
+  --color-brand-coral: #E84D58;
+  --color-brand-coral-hover: #d43d48;
+  --color-brand-lavender-bg: #F3ECF2;
+  --color-brand-card-bg: #E5D7E3;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-plus-jakarta: "Plus Jakarta Sans", sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
 }
+
