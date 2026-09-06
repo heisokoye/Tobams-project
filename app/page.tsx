@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import TrainingServicesSection from "@/components/TrainingServicesSection";
 import LmsSection from "@/components/LmsSection";
+import TrainingServicesSection from "@/components/TrainingServicesSection";
 import TransformationHubSection from "@/components/TransformationHubSection";
+import ManagementDevelopmentSection from "@/components/ManagementDevelopmentSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -11,9 +12,10 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <TrainingServicesSection />
         <LmsSection />
+        <TrainingServicesSection />
         <TransformationHubSection />
+        <ManagementDevelopmentSection />
       </main>
       <Footer />
     </div>
