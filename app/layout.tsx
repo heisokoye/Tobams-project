@@ -7,7 +7,11 @@ const nunito = Nunito({
   variable: '--font-nunito',
 });
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en" className={nunito.variable} suppressHydrationWarning>
       <body className={nunito.className}>

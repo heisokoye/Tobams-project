@@ -77,7 +77,7 @@ The color palette was extracted directly from the Figma design specification:
 - Content Card Lavender: `#E5D7E3`
 
 ### 2. Typography & Fonts
-Plus Jakarta Sans was selected via `next/font/google` as it accurately reflects the geometric sans-serif typeface, letter spacing, font weights (400, 500, 600, 700, 800), and rendering style of the Figma mockup.
+Nunito Sans was selected via `next/font/google` as it accurately reflects the geometric sans-serif typeface, letter spacing, font weights (400, 500, 600, 700, 800), and rendering style of the Figma mockup.
 
 ### 3. Server & Client Component Architecture
 The main page (`app/page.tsx`), `Hero.tsx`, `LmsSection.tsx`, and `Footer.tsx` are rendered as Server Components for maximum performance and instant HTML rendering.
@@ -184,7 +184,7 @@ The color palette was extracted directly from the Figma design specification:
 - **Content Card Lavender**: `#E5D7E3`
 
 ### 2. Typography & Fonts
-- Selected **Plus Jakarta Sans** via `next/font/google` as it accurately reflects the geometric sans-serif typeface, letter spacing, font weights (400, 500, 600, 700, 800), and rendering details of the Figma mockup.
+- Selected **Nunito Sans** via `next/font/google` as it accurately reflects the geometric sans-serif typeface, letter spacing, font weights (400, 500, 600, 700, 800), and rendering details of the Figma mockup.
 
 ### 3. Server & Client Component Architecture
 - Main page (`app/page.tsx`), `Hero.tsx`, `LmsSection.tsx`, and `Footer.tsx` are rendered as **Server Components** for maximum performance and instant HTML rendering.
