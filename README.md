@@ -23,7 +23,7 @@ This application faithfully reproduces the Tobams Group assessment design across
 - Library: [React 19](https://react.dev/)
 - Language: [TypeScript](https://www.typescriptlang.org/)
 - Styling: [Tailwind CSS v4](https://tailwindcss.com/)
-- Typography: `next/font/google` ([Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans))
+- Typography: `next/font/google` ([Nunito Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans))
 - Asset Optimisation: `next/image`
 
 ---
@@ -52,7 +52,7 @@ Ensure you have Node.js 18.x or higher installed.
    npm run dev
    ```
 
-4. Open [https://tobams-project.vercel.app/] in your browser to view the application.
+4. Open [https://localhost:3000/] in your browser to view the application.
 
 ---
 
@@ -98,7 +98,7 @@ The testimonials carousel uses native browser scroll with `scrollBy` rather than
 
 - Figma Design: [Frontend Intern Assessment Figma](https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment?node-id=0-1&p=f&t=qxnAKp4Ael8QtLYz-0)
 - GitHub Repository: https://github.com/heisokoye/Tobams-project
-- Live Deployment: `https://tobams-project.vercel.app` *(Replace with deployed URL)*
+- Live Deployment: `https://tobams-project.vercel.app` 
 
 ---
 
@@ -123,72 +123,3 @@ This application faithfully reproduces the Tobams Group assessment design across
 - **Accessibility & Performance**: Keyboard navigation, screen-reader friendly heading hierarchy, semantic elements (`<header>`, `<main>`, `<section>`, `<nav>`, `<footer>`), and smooth font loading.
 
 ---
-
-##  Tech Stack
-
-- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
-- **Library**: [React 19](https://react.dev/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Typography**: `next/font/google` ([Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans))
-- **Assets Optimization**: `next/image`
-
----
-
-##  Getting Started
-
-### Prerequisites
-
-Ensure you have **Node.js 18.x** or higher installed.
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/tobams-project.git
-   cd tobams-project
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open [https://tobams-project.vercel.app/] in your browser to view the application.
-
----
-
-##  Production Build
-
-To test or verify the production build locally:
-
-```bash
-npm run build
-npm run start
-```
-
----
-
-##  Design Decisions & Technical Assumptions
-
-### 1. Color Palette Tokens
-The color palette was extracted directly from the Figma design specification:
-- **Primary Brand Purple / Plum**: `#5B1947` / `#451036`
-- **Primary Action Coral Red**: `#E84D58`
-- **Light Lavender Background**: `#F3ECF2`
-- **Content Card Lavender**: `#E5D7E3`
-
-### 2. Typography & Fonts
-- Selected **Nunito Sans** via `next/font/google` as it accurately reflects the geometric sans-serif typeface, letter spacing, font weights (400, 500, 600, 700, 800), and rendering details of the Figma mockup.
-
-### 3. Server & Client Component Architecture
-- Main page (`app/page.tsx`), `Hero.tsx`, `LmsSection.tsx`, and `Footer.tsx` are rendered as **Server Components** for maximum performance and instant HTML rendering.
-- `Navbar.tsx` utilizes `"use client"` solely to handle interactive mobile drawer open/close states and keyboard aria controls.
-
-
-
