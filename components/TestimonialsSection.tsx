@@ -40,6 +40,8 @@ export default function TestimonialsSection() {
     setCanNext(el.scrollLeft < el.scrollWidth - el.clientWidth - 2);
   }, []);
 
+  // Listening to both scroll and resize because the button disabled states depend
+  // on how much the container can scroll — and that changes when the viewport resizes. I used AI here 
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
@@ -52,6 +54,8 @@ export default function TestimonialsSection() {
     };
   }, [updateButtons]);
 
+  // Moving by one card width plus the gap so it always lands at the start of the next card.
+  // The 2px buffer in updateButtons handles sub-pixel scroll position rounding in some browsers. I used Ai here
   const scroll = (dir: "prev" | "next") => {
     const el = scrollRef.current;
     if (!el) return;

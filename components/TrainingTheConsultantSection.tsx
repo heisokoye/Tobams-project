@@ -41,6 +41,9 @@ export default function TrainingTheConsultantSection() {
             Maximise Your Potential as a Certified Trainer:
           </p>
 
+          {/* The body copy is slightly different between mobile and desktop based on the Figma design.
+              Mobile specifically mentions Business Analysis; desktop keeps the wording broader.
+              That's why there are two separate paragraphs swapped at the lg breakpoint. */}
           {/* Body copy — mobile calls out Business Analysis explicitly */}
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed font-normal max-w-4xl lg:hidden">
             With the help of our Business Analysis Training Consultants

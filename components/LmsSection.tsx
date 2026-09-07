@@ -24,6 +24,8 @@ export default function LmsSection() {
           heading and the card+button wrapper auto-flow into col 6-12,
           row 1 and row 2 respectively — no manual col/row-start needed.
         */}
+        {/* On desktop the image column spans two grid rows so it fills the full height
+            next to both the heading above and the info card below — matching the Figma layout. */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-x-12 lg:gap-y-6 items-center lg:items-start">
 
           {/* Section Heading */}

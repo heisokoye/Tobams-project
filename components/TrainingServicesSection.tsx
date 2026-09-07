@@ -18,6 +18,9 @@ export default function TrainingServicesSection() {
       <div className="max-w-7xl mx-auto space-y-16 sm:space-y-24 lg:space-y-28">
 
         {/* Item 1: Corporate Trainings */}
+        {/* The image appears twice — once for mobile and once for desktop — because the layout
+            order changes between breakpoints. The hidden one is still in the DOM but not visible.
+            On desktop the image sits on the right; on mobile it drops below the heading. */}
         <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-12 lg:items-stretch gap-6">
           <div className="lg:col-span-6 flex flex-col space-y-4">
             <h2 className="text-2xl sm:text-3xl md:text-[34px] font-semibold text-[#1E1B1E] tracking-tight leading-tight">
