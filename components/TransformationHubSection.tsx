@@ -25,7 +25,7 @@ export default function TransformationHubSection() {
 
   return (
     <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-12">
-      <div className="max-w-8xl mx-auto bg-[#FDE8EC] rounded-3xl p-6 sm:p-10 md:p-12 shadow-xs border border-[#FCDDEC]">
+      <div className="max-w-7xl mx-auto bg-[#FDE8EC] rounded-3xl p-6 sm:p-10 md:p-12 shadow-xs border border-[#FCDDEC]">
         
         {/* Header Text Area */}
         <div className="flex flex-col space-y-2 mb-6">

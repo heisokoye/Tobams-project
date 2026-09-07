@@ -3,7 +3,7 @@ import Image from "next/image";
 function LightningIcon() {
   return (
     <svg
-      className="w-4 h-4 text-brand-purple fill-current shrink-0"
+      className="w-4 h-4 text-black fill-current shrink-0"
       viewBox="0 0 24 24"
       aria-hidden="true"
     >
@@ -15,18 +15,17 @@ function LightningIcon() {
 export default function TrainingServicesSection() {
   return (
     <section className="w-full bg-white py-14 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-12 overflow-hidden">
-      <div className="max-w-8xl mx-auto space-y-16 sm:space-y-24 lg:space-y-28">
+      <div className="max-w-7xl mx-auto space-y-16 sm:space-y-24 lg:space-y-28">
 
         {/* Item 1: Corporate Trainings */}
-        <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center gap-6">
-          {/* Mobile Order: Heading -> Image -> Description -> Bullets */}
+        <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-12 lg:items-stretch gap-6">
           <div className="lg:col-span-6 flex flex-col space-y-4">
-            <h2 className="text-2xl sm:text-3xl md:text-[34px] font-normal text-[#1E1B1E] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-[34px] font-semibold text-[#1E1B1E] tracking-tight leading-tight">
               Corporate Trainings
             </h2>
 
-            {/* Mobile Image (shown only on small screens before description) */}
-            <div className="lg:hidden w-full relative aspect-4/3 rounded-2xl overflow-hidden shadow-sm border border-gray-100 my-2">
+            {/* Mobile Image */}
+            <div className="lg:hidden w-full relative aspect-4/3 rounded-tl-[56px] rounded-tr-[24px] rounded-br-[23px] rounded-bl-[12px] overflow-hidden shadow-sm border border-gray-100 my-2">
               <Image
                 src="/3.jpg"
                 alt="Corporate team attending training presentation"
@@ -66,7 +65,7 @@ export default function TrainingServicesSection() {
 
           {/* Desktop Image */}
           <div className="hidden lg:block lg:col-span-6">
-            <div className="relative w-full aspect-4/3 rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <div className="relative w-full h-full min-h-[320px] rounded-tl-[56px] rounded-tr-[24px] rounded-br-[23px] rounded-bl-[12px] overflow-hidden shadow-sm border border-gray-100">
               <Image
                 src="/3.jpg"
                 alt="Corporate team attending training presentation"
@@ -79,10 +78,10 @@ export default function TrainingServicesSection() {
         </div>
 
         {/* Item 2: Personalised Individual Training */}
-        <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center gap-6">
+        <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-12 lg:items-stretch gap-6">
           {/* Desktop Image (Left side on desktop) */}
           <div className="hidden lg:block lg:col-span-6">
-            <div className="relative w-full aspect-4/3 rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <div className="relative w-full h-full min-h-80 rounded-tl-[56px] rounded-tr-3xl rounded-br-[23px] rounded-bl-[12px] overflow-hidden shadow-sm border border-gray-100">
               <Image
                 src="/4.jpg"
                 alt="Professional woman taking notes during individual training session"
@@ -93,14 +92,13 @@ export default function TrainingServicesSection() {
             </div>
           </div>
 
-          {/* Mobile & Desktop Text Column */}
           <div className="lg:col-span-6 flex flex-col space-y-4">
-            <h2 className="text-2xl sm:text-3xl md:text-[34px] font-normal text-[#1E1B1E] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-[34px] font-semibold text-[#1E1B1E] tracking-tight leading-tight">
               Personalised Individual Training
             </h2>
 
             {/* Mobile Image */}
-            <div className="lg:hidden w-full relative aspect-4/3 rounded-2xl overflow-hidden shadow-sm border border-gray-100 my-2">
+            <div className="lg:hidden w-full relative aspect-4/3 rounded-tl-[56px] rounded-tr-[24px] rounded-br-[23px] rounded-bl-[12px] overflow-hidden shadow-sm border border-gray-100 my-2">
               <Image
                 src="/4.jpg"
                 alt="Professional woman taking notes during individual training session"
@@ -144,15 +142,14 @@ export default function TrainingServicesSection() {
         </div>
 
         {/* Item 3: Capacity Development */}
-        <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center gap-6">
-          {/* Text Column */}
+        <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-12 lg:items-stretch gap-6">
           <div className="lg:col-span-6 flex flex-col space-y-4">
-            <h2 className="text-2xl sm:text-3xl md:text-[34px] font-normal text-[#1E1B1E] tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-[34px] font-semibold text-[#1E1B1E] tracking-tight leading-tight">
               Capacity Development
             </h2>
 
             {/* Mobile Image */}
-            <div className="lg:hidden w-full relative aspect-4/3 rounded-2xl overflow-hidden shadow-sm border border-gray-100 my-2">
+            <div className="lg:hidden w-full relative aspect-4/3 rounded-tl-[56px] rounded-tr-[24px] rounded-br-[23px] rounded-bl-[12px] overflow-hidden shadow-sm border border-gray-100 my-2">
               <Image
                 src="/5.jpg"
                 alt="Trainer giving capacity building strategy workshop"
@@ -196,7 +193,7 @@ export default function TrainingServicesSection() {
 
           {/* Desktop Image */}
           <div className="hidden lg:block lg:col-span-6">
-            <div className="relative w-full aspect-4/3 rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <div className="relative w-full h-full min-h-80 rounded-tl-[56px] rounded-tr-3xl rounded-br-[23px] rounded-bl-[12px] overflow-hidden shadow-sm border border-gray-100">
               <Image
                 src="/5.jpg"
                 alt="Trainer giving capacity building strategy workshop"

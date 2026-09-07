@@ -21,11 +21,11 @@ export default function ManagementDevelopmentSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-12">
-      <div className="max-w-8xl mx-auto bg-[#250A1B] text-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-md border border-[#3D142E]">
+    <section className="w-full bg-brand-lavender-bg py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto bg-[#250A1B] text-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-md border border-[#3D142E]">
 
         {/* Main Layout Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 lg:items-stretch">
 
           {/* Mobile Order Heading (visible at top on mobile) */}
           <div className="lg:hidden">
@@ -36,8 +36,10 @@ export default function ManagementDevelopmentSection() {
 
           {/* Left Column: Image */}
           <div className="lg:col-span-6">
-            {/* Mobile: wide/landscape crop. Desktop: near-square crop matching the reference */}
-            <div className="relative w-full aspect-video lg:aspect-square rounded-2xl overflow-hidden shadow-md border border-white/10">
+            {/* Mobile: fixed landscape crop, not sharing a row with anything.
+                Desktop: h-full so the image stretches to match the text
+                column's actual height and starts flush with the heading. */}
+            <div className="relative w-full aspect-video lg:aspect-auto lg:h-full lg:min-h-[420px] rounded-2xl overflow-hidden shadow-md border border-white/10">
               <Image
                 src="/6.jpg"
                 alt="Corporate executives collaborating over a digital tablet in a modern office"
@@ -52,7 +54,7 @@ export default function ManagementDevelopmentSection() {
           <div className="lg:col-span-6 flex flex-col space-y-6">
 
             {/* Desktop Heading */}
-            <h2 className="hidden lg:block text-3xl md:text-[36px] font-nromal text-white tracking-tight leading-tight">
+            <h2 className="hidden lg:block text-3xl md:text-[36px] font-normal text-white tracking-tight leading-tight">
               Management Development Program
             </h2>
 
@@ -71,7 +73,7 @@ export default function ManagementDevelopmentSection() {
               {pills.map((pill, index) => (
                 <div
                   key={index}
-                  className="bg-[#845778]/80 hover:bg-[#845778] backdrop-blur-xs rounded-xl px-5 py-3.5 flex items-center gap-3 text-xs sm:text-sm font-normal  text-white shadow-xs border border-white/15 transition-all"
+                  className="bg-[#845778]/80 hover:bg-[#845778] backdrop-blur-xs rounded-xl px-5 py-3.5 flex items-center gap-3 text-xs sm:text-sm font-normal text-white shadow-xs border border-white/15 transition-all"
                 >
                   <WhiteLightningIcon />
                   <span>{pill}</span>

@@ -9,8 +9,8 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white border-b border-gray-100 sticky top-0 z-50 shadow-xs">
-      {/* Top Header Row */}
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-12 py-3 sm:py-4 flex items-center justify-between">
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-3 sm:py-4 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#5B1947] rounded-md p-1">
           <Image
@@ -30,13 +30,13 @@ export default function Navbar() {
             type="button"
             className="flex items-center gap-2.5 bg-[#5B1947] hover:bg-[#471237] text-white font-medium px-4 py-2.5 rounded-md text-sm transition-all shadow-xs focus:outline-none focus:ring-2 focus:ring-[#5B1947]"
           >
-            <span className="w-6 h-6 rounded-full bg-white/20 text-white flex items-center justify-center text-xs font-semibold">
-              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+            <span className="w-7 h-7 rounded-full border border-white/40 bg-white/10 flex items-center justify-center shrink-0">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
               </svg>
             </span>
             <span>Account</span>
-            <svg className="w-4 h-4 ml-0.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
@@ -183,8 +183,10 @@ export default function Navbar() {
               type="button"
               className="w-full flex items-center justify-center gap-2 bg-[#5B1947] text-white font-medium py-2.5 rounded-md text-sm"
             >
-              <span className="w-5 h-5 rounded-full bg-white/20 text-white flex items-center justify-center text-xs">
-                👤
+              <span className="w-6 h-6 rounded-full border border-white/40 bg-white/10 flex items-center justify-center shrink-0">
+                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
+                </svg>
               </span>
               <span>Account</span>
             </button>

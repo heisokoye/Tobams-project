@@ -4,6 +4,9 @@ import LmsSection from "@/components/LmsSection";
 import TrainingServicesSection from "@/components/TrainingServicesSection";
 import TransformationHubSection from "@/components/TransformationHubSection";
 import ManagementDevelopmentSection from "@/components/ManagementDevelopmentSection";
+import TrainingTheConsultantSection from "@/components/TrainingTheConsultantSection";
+import CtaBannerSection from "@/components/CtaBannerSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -16,6 +19,9 @@ export default function Home() {
         <TrainingServicesSection />
         <ManagementDevelopmentSection />
         <TransformationHubSection />
+        <TrainingTheConsultantSection />
+        <CtaBannerSection />
+        <TestimonialsSection />
       </main>
       <Footer />
     </div>

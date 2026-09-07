@@ -1,35 +1,18 @@
-import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
-import "./globals.css";
+import { Nunito } from 'next/font/google';
+import './globals.css';
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
+const nunito = Nunito({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-nunito',
 });
 
-export const metadata: Metadata = {
-  title: "Tobams Group - Training & Development",
-  description:
-    "Enhance skills, broaden knowledge, and propel careers forward with Tobams Group training programs.",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${plusJakartaSans.variable} font-sans antialiased scroll-smooth`}
-      suppressHydrationWarning
-    >
-      <body className="min-h-screen bg-white text-[#1E1B1E] flex flex-col font-sans" suppressHydrationWarning>
+    <html lang="en" className={nunito.variable} suppressHydrationWarning>
+      <body className={nunito.className}>
         {children}
       </body>
     </html>
   );
 }
-
